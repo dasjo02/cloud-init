@@ -14,7 +14,6 @@ write_files:
   path: /tmp/kong.sh
   permissions: '0644'
 runcmd:
-  - [ /usr/bin/cloud-init, single, --name, cc_write_files, --frequency, always ]
   - [ /usr/bin/sh, -c, /tmp/kong.sh ]
 #   SMBDOPTIONS="-D"
 #  path: /tmp
